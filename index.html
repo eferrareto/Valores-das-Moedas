@@ -9,25 +9,21 @@
 </head>
 <body>
     <header>
-        <h1>Câmbio!</h1>
+        <h1>Câmbio</h1>
     </header>
     <main>
         <div>
-            <label for="Valor">Valor:</label>
-            <input type="number" name="valor" id="valor">
-            <p>Para qual moeda você quer alterar ?</p>
-            <label for="moeda">Moeda:</label>
-            <input type="radio" name="moeda">
-            Dolar
-            <input type="radio" name="moeda">
-            Euro
+            <label for="dolar" id="ladolar">Dólar Americano</label>
             <br>
-            <hr>
-
+            <input type="text" id="dolar" name="dolar" placeholder="US$">
+            <br>
+            <label for="real" id="lareal">Real Brasileiro</label>
+            <br>
+            <input type="text" id="real" name="real" placeholder="R$">
+            <p id="resposta"></p>
+            <button onclick="cotação()">Concluir</button>
         </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="conversor.js"></script>
 </body>
 </html>
